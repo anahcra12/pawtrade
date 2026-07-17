@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PawTrade | One Campus. Endless Deals.</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="/css/output.css">
+</head>
+
+<body class="bg-[#DAD7CD] overflow-x-hidden font-[Inter]">
+
+    <!-- ================= Background Video ================= -->
+
+    <div class="fixed inset-0 -z-20 overflow-hidden">
+
+        <video autoplay muted loop playsinline class="w-full h-full object-cover">
+
+            <source src="/videos/explorecampus.mp4" type="video/mp4">
+
+        </video>
+
+    </div>
+
+    <!-- Dark Overlay -->
+
+    <div class="fixed inset-0 -z-10 bg-black/60"></div>
+
+    <!-- ================= Navbar ================= -->
+
+    <header class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-black/20 border-b border-white/10">
+
+        <div class="max-w-full mx-0 flex items-center justify-between px-8 py-5">
+
+            <!-- Logo -->
+
+            <a href="/" class="flex items-center gap-3">
+
+                <div class="w-12 h-12 rounded-full bg-[#588157] flex items-center justify-center shadow-lg">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 512 512" class="w-7 h-7">
+
+                        <path
+                            d="M256 224c35 0 64 29 64 64s-29 64-64 64-64-29-64-64 29-64 64-64zm-96-64c22 0 40-25 40-56S182 48 160 48s-40 25-40 56 18 56 40 56zm192 0c22 0 40-25 40-56S374 48 352 48s-40-25-40-56 18-56 40-56zm-288 64c22 0 40-25 40-56S86 112 64 112s-40 25-40 56 18 56 40 56zm384 0c22 0 40-25 40-56s-18-56-40-56-40 25-40 56 18 56 40 56z" />
+
+                    </svg>
+
+                </div>
+
+                <span class="text-3xl font-bold text-white tracking-wide">
+
+                    Paw<span class="text-[#A3B18A]">Trade</span>
+
+                </span>
+
+            </a>
+
+            <!-- Navigation -->
+
+            <nav class="hidden md:flex items-center gap-10 text-white font-medium">
+
+                <a href="/"
+                    class="relative after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-[#A3B18A] after:transition-all hover:after:w-full hover:text-[#A3B18A]">
+
+                    Home
+
+                </a>
+
+                <a href="/explore"
+                    class="relative after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-[#A3B18A] after:transition-all hover:after:w-full hover:text-[#A3B18A]">
+
+                    Explore
+
+                </a>
+
+                <a href="/sell"
+                    class="relative after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-[#A3B18A] after:transition-all hover:after:w-full hover:text-[#A3B18A]">
+
+                    Sell
+
+                </a>
+
+                <a href="/about"
+                    class="relative after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-[#A3B18A] after:transition-all hover:after:w-full hover:text-[#A3B18A]">
+
+                    About Us
+
+                </a>
+                   <a href="/help"
+                    class="relative after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-[#A3B18A] after:transition-all hover:after:w-full hover:text-[#A3B18A]">
+                    Help
+
+                </a>
+
+            </nav>
+
+            <!-- Buttons -->
+
+            <div class="flex gap-4">
+
+                <a href="/login"
+                    class="px-6 py-2 rounded-full border border-[#A3B18A] text-white hover:bg-white hover:text-[#344E41] transition">
+
+                    Login
+
+                </a>
+
+                <a href="/register"
+                    class="px-6 py-2 rounded-full bg-[#588157] text-white hover:bg-[#3A5A40] transition shadow-lg">
+
+                    Sign Up
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ================= Hero ================= -->
+
+    <section class="min-h-screen flex items-center justify-center px-6">
+
+        <div class="text-center text-white">
+
+            <h1 class="font-[Fraunces] text-6xl md:text-8xl font-bold leading-tight">
+
+                Paw<span class="text-[#A3B18A]">Trade</span>
+
+            </h1>
+
+            <p class="mt-6 text-3xl font-light tracking-wide">
+
+                One Campus. Endless Deals.
+
+            </p>
+
+            <p class="mt-4 text-lg text-gray-300">
+
+                Buy • Sell • Help within IIEST Shibpur
+
+            </p>
+
+            <p class="mt-8 max-w-3xl mx-auto text-lg text-gray-200 leading-8">
+
+                Discover affordable books, electronics, cycles,
+                furniture and more from verified students.
+                Give your unused items a second life and help
+                build a smarter, sustainable campus community.
+
+            </p>
+
+            <div class="mt-16 flex justify-center">
+
+                <form action="/marketplace" method="GET"
+                    class="flex w-full max-w-2xl overflow-hidden rounded-full bg-white/15 backdrop-blur-md border border-white/20 shadow-xl">
+
+                    <input type="text" name="search" placeholder="🔍 Search within IIEST Shibpur..."
+                        class="flex-1 bg-transparent px-8 py-5 text-lg text-white placeholder:text-gray-300 outline-none">
+
+                    <button class="rounded-r-full bg-[#588157] px-10 font-semibold text-white hover:bg-[#3A5A40] transition">
+
+                        Search
+
+                    </button>
+
+                </form>
+
+            </div>
+
+            <p class="mt-5 text-center text-sm text-gray-300">
+                Verified listings • Campus pickup • Student-to-student trading
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= Next Section ================= -->
+
+    <section id="featured" class="min-h-screen bg-[#DAD7CD] flex items-center justify-center">
+
+        <div class="text-center">
+
+            <h2 class="text-5xl font-bold text-[#344E41]">
+
+                Coming Soon...
+
+            </h2>
+
+            <p class="mt-4 text-gray-700 text-lg">
+
+                Featured Categories & Latest Listings
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <%- include('partials/footer') %>
+
+        <script src="/js/main.js"></script>
+
+</body>
+
+</html>

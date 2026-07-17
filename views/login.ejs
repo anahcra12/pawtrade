@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | PawTrade</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/output.css">
+</head>
+
+<body class="bg-[#DAD7CD] font-[Inter]">
+
+    <%- include('partials/header',{page:'login'}) %>
+
+      <section class="h-screen flex items-center justify-center px-6 pt-24 pb-6">
+
+    <div class="grid w-full max-w-5xl overflow-hidden rounded-3xl bg-white shadow-2xl lg:grid-cols-2">
+
+        <!-- LEFT -->
+
+        <div class="flex flex-col justify-center p-8">
+
+            <span class="text-xs font-semibold uppercase tracking-[0.35em] text-[#588157]">
+                Welcome Back
+            </span>
+
+            <h1 class="mt-3 font-[Fraunces] text-4xl lg:text-5xl text-[#344E41] leading-tight">
+                Login to <br>PawTrade
+            </h1>
+
+            <p class="mt-3 text-base leading-7 text-gray-600">
+                Buy, sell and exchange items with verified students of
+                IIEST Shibpur.
+            </p>
+
+            <form action="/login" method="POST" class="mt-6 space-y-4">
+
+                <div>
+                    <label class="mb-1 block font-medium">
+                        College Email
+                    </label>
+
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="you@iiests.ac.in"
+                        class="w-full rounded-xl border border-gray-300 px-5 py-3 outline-none transition focus:border-[#588157]">
+                </div>
+
+                <div>
+
+                    <label class="mb-1 block font-medium">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        name="password"
+                        placeholder="••••••••"
+                        class="w-full rounded-xl border border-gray-300 px-5 py-3 outline-none transition focus:border-[#588157]">
+
+                </div>
+
+                <div class="flex items-center justify-between text-sm">
+
+                    <label class="flex items-center gap-2">
+
+                        <input type="checkbox">
+
+                        Remember Me
+
+                    </label>
+
+                    <a href="/forgot-password"
+                        class="text-[#588157] hover:underline">
+
+                        Forgot Password?
+
+                    </a>
+
+                </div>
+
+                <button
+                    class="w-full rounded-xl bg-[#588157] py-3 text-base font-semibold text-white transition hover:bg-[#3A5A40]">
+
+                    Login
+
+                </button>
+
+            </form>
+
+            <p class="mt-5 text-center text-sm">
+
+                New to PawTrade?
+
+                <a href="/register"
+                    class="font-semibold text-[#588157] hover:underline">
+
+                    Create an account
+
+                </a>
+
+            </p>
+
+        </div>
+
+        <!-- RIGHT -->
+
+        <div class="relative hidden overflow-hidden lg:block">
+
+            <video
+                autoplay
+                muted
+                loop
+                playsinline
+                class="absolute inset-0 h-full w-full object-cover">
+
+                <source src="/videos/login.mp4" type="video/mp4">
+
+            </video>
+
+            <div class="absolute inset-0 bg-black/20"></div>
+
+            <div class="absolute bottom-8 left-8 right-8 text-white">
+
+                <h2 class="font-[Fraunces] text-3xl leading-tight">
+                    Join
+                    <br>
+                    PawTrade
+                </h2>
+
+                <p class="mt-3 text-sm leading-6 text-white/90">
+                    Buy • Sell • Help
+                    <br>
+                    Only within IIEST Shibpur.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+
+</html>
